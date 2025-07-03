@@ -196,3 +196,4 @@ cython_debug/
 
 /PlantVillage
 datasets_processados/
+modelos_salvos/
