@@ -1,0 +1,7 @@
+fastapi
+tensorflow
+pillow
+numpy
+scikit-learn
+python-multipart
+requests
