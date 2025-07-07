@@ -133,7 +133,7 @@ def run_comprehensive_test():
         species_results = []
         
         for i, img_info in enumerate(images, 1):
-            print(f"   {i}/5 - {os.path.basename(img_info['path'])}...", end=" ")
+            print(f"   {i}/10 - {os.path.basename(img_info['path'])}...", end=" ")
             
             result = test_prediction(
                 img_info['path'], 

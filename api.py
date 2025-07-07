@@ -123,6 +123,7 @@ def pipeline_hierarquico(img_array: np.ndarray) -> Dict[str, Any]:
             # Resultado final combinado
             resultado_final = f"{especie_predita}_{saude_predita}"
             confianca_final = confianca_especie * confianca_saude
+            pipeline_sucesso = True
             
         else:
             # Modelo especialista não disponível
@@ -130,6 +131,7 @@ def pipeline_hierarquico(img_array: np.ndarray) -> Dict[str, Any]:
             confianca_saude = 0.0
             resultado_final = f"{especie_predita}_unknown"
             confianca_final = confianca_especie
+            pipeline_sucesso = False
         
         return {
             'especie': {
@@ -144,6 +146,7 @@ def pipeline_hierarquico(img_array: np.ndarray) -> Dict[str, Any]:
                 'classificacao': resultado_final,
                 'confianca': confianca_final
             },
+            'pipeline_sucesso': pipeline_sucesso
         }
         
     except Exception as e:
