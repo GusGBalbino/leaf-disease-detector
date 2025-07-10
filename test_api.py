@@ -117,7 +117,7 @@ def get_test_images_by_species(n_images=5):
 def run_comprehensive_test():
     """Executa teste abrangente com 5 imagens de cada espécie"""
 
-    print(f"\n📋 Coletando 5 imagens de cada espécie...")
+    print(f"\n📋 Coletando 10 imagens de cada espécie...")
     random.seed(42)
     test_images = get_test_images_by_species(n_images=5)
     
