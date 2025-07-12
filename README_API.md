@@ -42,15 +42,12 @@ Endpoint principal para classificação de doenças
     "confianca": 0.894
   },
   "pipeline_sucesso": true,
-  "detalhes": {
-    "modelo_especie_usado": true,
-    "modelo_especialista_usado": true,
-    "especialista_disponivel": true
-  },
-  "arquivo": {
-    "nome": "imagem.jpg",
-    "tamanho": 45678,
-    "tipo": "image/jpeg"
+  "debug_info": {
+    "threshold_usado": 0.75,
+    "probabilidade_bruta": 0.924,
+    "logica_aplicada": "Threshold científico fixo para tomato",
+    "decisao": "pred_saude (0.924) > threshold (0.750) = true",
+    "sistema": "threshold_cientifico_fixo"
   }
 }
 ```
